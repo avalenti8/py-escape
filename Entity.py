@@ -6,7 +6,7 @@ class Entity:
 		self.y = y
 		self.graphic = graphic
 
-	def Player(Entity):
+	class Player(Entity):
 		def __init__(self, name, x, y, graphic):
 			Entity.__init__(self, x, y, graphic)
 			self.hp = hp
@@ -23,7 +23,7 @@ class Entity:
 			elif D == "e":
 				return Player.Move(x+1, y)
 	
-	def Object(Entity):
+	class Object(Entity):
 		def __init__(self, name, x, y, graphic):
 			Entity.__init__(self, x, y, graphic)
 			
